@@ -1,0 +1,7 @@
+pythondemo/device_key.json
+pythondemo/.local/
+pythondemo/__pycache__/
+web/dist/
+bin/
+logs/
+./bin

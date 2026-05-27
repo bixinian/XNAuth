@@ -1,0 +1,25 @@
+server:
+  addr: "0.0.0.0:8080"
+  mode: "release"
+
+mysql:
+  dsn: "user:password@tcp(127.0.0.1:3306)/auth?charset=utf8mb4&parseTime=True&loc=Local"
+  max_open_conns: 50
+  max_idle_conns: 10
+  conn_max_lifetime_minutes: 30
+
+jwt:
+  secret: "change-me"
+  expire_hours: 24
+
+secure_transport:
+  enabled: false
+  timestamp_skew_seconds: 120
+
+auth:
+  heartbeat_interval_seconds: 30
+  session_timeout_seconds: 90
+
+log:
+  level: "info"
+  path: "./logs/app.log"
